@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>料金表 - 訪問介護事業所</title>
+    <title>料金表 - メゾン介護ステーション</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pricing.css">
     <script defer src="js/loadComponents.js"></script>
@@ -19,21 +19,96 @@
                 <p>私たちの提供するサービスの料金について説明します。</p>
 
                 <div class="pricing-table">
-                    <div class="pricing-item">
-                        <h2>身体介護</h2>
-                        <p>1時間あたり: 3,000円</p>
-                        <p>1回あたりの料金には、食事、入浴、排泄などのサポートが含まれます。</p>
-                    </div>
-                    <div class="pricing-item">
-                        <h2>生活援助</h2>
-                        <p>1時間あたり: 2,500円</p>
-                        <p>掃除、洗濯、買い物などの日常生活のサポートが含まれます。</p>
-                    </div>
-                    <div class="pricing-item">
-                        <h2>通院介助</h2>
-                        <p>1時間あたり: 2,000円</p>
-                        <p>病院への付き添いや移動のサポートが含まれます。</p>
-                    </div>
+                    <h2>基本料金</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>サービス内容</th>
+                                <th>利用時間</th>
+                                <th>料金（日額）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>身体介護</td>
+                                <td>20分未満</td>
+                                <td>186円</td>
+                            </tr>
+                            <tr>
+                                <td>身体介護</td>
+                                <td>20分以上30分未満</td>
+                                <td>278円</td>
+                            </tr>
+                            <tr>
+                                <td>身体介護</td>
+                                <td>30分以上1時間未満</td>
+                                <td>441円</td>
+                            </tr>
+                            <tr>
+                                <td>身体介護</td>
+                                <td>1時間以上</td>
+                                <td>646円</td>
+                            </tr>
+                            <tr>
+                                <td>生活援助</td>
+                                <td>20分以上45分未満</td>
+                                <td>204円</td>
+                            </tr>
+                            <tr>
+                                <td>生活援助</td>
+                                <td>45分以上</td>
+                                <td>251円</td>
+                            </tr>
+                            <tr>
+                                <td>通院等乗降介助</td>
+                                <td>1回につき</td>
+                                <td>111円</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">2024年度の地域区分を適用した金額を表示しています。<br>
+                        負担割合1割の場合の概算料金です。正確な料金は各事業所にお問い合わせください。<br>
+                        ※30分増すごとに+96円。</p>
+                </div>
+
+                <div class="additional-charges">
+                    <h2>その他の料金</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>項目</th>
+                                <th>詳細</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>サービス提供地域外での交通費</td>
+                                <td>当該介護サービス実施地域外でのサービス提供は行わない</td>
+                            </tr>
+                            <tr>
+                                <td>キャンセル料</td>
+                                <td>当日キャンセル: 1,700円or850円</td>
+                            </tr>
+                            <tr>
+                                <td>利用者負担軽減制度</td>
+                                <td>なし</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="benefits">
+                    <h2>取得している加算状況</h2>
+                    <div class="benefit-item">特別地域訪問介護加算: <span>なし</span></div>
+                    <div class="benefit-item">認知症専門ケア加算(I): <span>あり</span></div>
+                    <div class="benefit-item">認知症専門ケア加算(II): <span>なし</span></div>
+                    <div class="benefit-item">リハビリテーション加算: <span>なし</span></div>
+                    <div class="benefit-item">生活機能向上連携加算(I): <span>あり</span></div>
+                    <div class="benefit-item">生活機能向上連携加算(II): <span>なし</span></div>
+                    <div class="benefit-item">介護職員処遇改善加算(I): <span>あり</span></div>
+                    <div class="benefit-item">介護職員処遇改善加算(II): <span>なし</span></div>
+                    <div class="benefit-item">介護職員処遇改善加算(III): <span>なし</span></div>
+                    <div class="benefit-item">介護職員等特定処遇改善加算(I): <span>あり</span></div>
                 </div>
             </div>
         </section>
