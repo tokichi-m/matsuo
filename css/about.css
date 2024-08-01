@@ -1,0 +1,31 @@
+/* about.css */
+.company-info {
+    margin-top: 20px;
+}
+
+.company-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0053a0; /* デザインガイドに準拠 */
+}
+
+.company-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.company-info th, .company-info td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.company-info th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.company-info td {
+    background-color: #fff;
+}

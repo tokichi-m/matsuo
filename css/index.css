@@ -1,0 +1,60 @@
+/* index.css */
+.hero {
+    background-color: #e9f4ff;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 1.25rem;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.about, .services, .contact {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.about h2, .services h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 1.25rem;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-cards .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    margin: 0.625rem;
+    text-align: left;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.service-cards .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.service-cards .card h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.75rem;
+}
+
+.service-cards .card p {
+    font-size: 1em;
+    margin-bottom: 1rem;
+}

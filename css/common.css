@@ -149,6 +149,19 @@ body {
     margin-top: 1.25rem; /* 20px -> 1.25rem */
 }
 
+/* フッターのリンク */
+.footer-links {
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.625rem; /* 10px -> 0.625rem */
+}
+
+
 /* タブレットビューの基本スタイル */
 @media (max-width: 48rem) { /* 768px */
     .hamburger {

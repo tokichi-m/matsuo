@@ -1,26 +1,62 @@
 /* pricing.css */
 .pricing-table {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     margin-top: 20px;
 }
 
-.pricing-item {
+.pricing-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing-table th, .pricing-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.pricing-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.pricing-table .note {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.additional-charges {
+    margin-top: 40px;
+}
+
+.additional-charges table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.additional-charges th, .additional-charges td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.additional-charges th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.benefits {
+    margin-top: 40px;
+}
+
+.benefits .benefit-item {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 200px;
 }
 
-.pricing-item h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.pricing-item p {
-    font-size: 1em;
-    margin-bottom: 10px;
+.benefits .benefit-item span {
+    font-weight: bold;
 }
