@@ -17,8 +17,12 @@ body {
     margin: 0 auto;
 }
 
-.site-header .container {
+
+.site-header {
     background-color: #0053a0;
+}
+
+.site-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
