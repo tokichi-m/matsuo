@@ -1,4 +1,8 @@
 /* common.css */
+html {
+    font-size: 16px; /* これが1remとなる基準 */
+}
+
 body {
     font-family: "Noto Sans JP", sans-serif;
     margin: 0;
@@ -8,132 +12,170 @@ body {
 }
 
 .container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
-.site-header {
+.site-header .container {
     background-color: #0053a0;
-    color: #fff;
-    padding: 10px 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    padding: 0 1.25rem; /* 20px -> 1.25rem */
 }
 
 .logo {
-    height: 50px;
-    vertical-align: middle;
-    margin-right: auto;
+    height: 3.125rem; /* 50px -> 3.125rem */
 }
 
 .hamburger {
     display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: transparent;
+    background: none;
     border: none;
     cursor: pointer;
+    padding: 0.625rem; /* 10px -> 0.625rem */
 }
 
-.hamburger span {
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
+.hamburger img {
+    width: 2.5rem; /* 40px -> 2.5rem */
+    height: auto;
 }
 
 .nav-list {
+    display: flex;
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
     margin: 0;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav-list li {
-    margin: 5px 10px;
+    padding: 0.625rem 0.9375rem; /* 10px 15px -> 0.625rem 0.9375rem */
 }
 
 .nav-list li a {
-    text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    text-decoration: none;
     display: flex;
     align-items: center;
+    flex-direction: column; /* アイコンとテキストを縦に並べる */
 }
 
 .nav-list li a img {
-    margin-right: 5px;
-    height: 20px;
-}
-
-.nav-list li a:focus {
-    outline: 2px solid #fff;
-    outline-offset: 2px;
+    margin-bottom: 0.25rem; /* 4px -> 0.25rem */
 }
 
 .main-content {
-    padding: 20px 0;
+    padding: 1.25rem 0; /* 20px -> 1.25rem */
 }
 
 .hero {
     background-color: #e9f4ff;
-    padding: 40px 0;
+    padding: 2.5rem 0; /* 40px -> 2.5rem */
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 2.5em;
-    margin: 0 0 20px;
+    font-size: 2.5em; /* サイズはemで保持 */
+    margin: 0 0 1.25rem; /* 20px -> 1.25rem */
 }
 
 .hero p {
     font-size: 1.2em;
 }
 
+.services {
+    padding: 2.5rem 0; /* 40px -> 2.5rem */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* 2px 4px -> 0.125rem 0.25rem */
+    padding: 1.25rem;
+    margin: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 0 0 0.625rem; /* 10px -> 0.625rem */
+}
+
+.card p {
+    font-size: 1em;
+}
+
+.contact {
+    background-color: #e9f4ff;
+    padding: 2.5rem 0; /* 40px -> 2.5rem */
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+}
+
 .site-footer {
     background-color: #0053a0;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 0.625rem 0; /* 10px -> 0.625rem */
+    margin-top: 1.25rem; /* 20px -> 1.25rem */
 }
 
-@media (max-width: 768px) {
+/* タブレットビューの基本スタイル */
+@media (max-width: 48rem) { /* 768px */
     .hamburger {
-        display: flex;
+        display: block; /* タブレットデバイスでもハンバーガーメニューを表示 */
     }
 
     .nav-list {
-        display: none;
+        position: fixed;
+        top: 3.75rem; /* 60px -> 3.75rem */
+        left: 0;
+        right: 0;
+        background-color: #0053a0; /* 青の背景色を設定 */
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: #0053a0;
+        display: none; /* メニューは非表示にしておく */
+        padding: 1.25rem 0; /* 20px -> 1.25rem */
+        box-shadow: 0 0.25rem 0.375rem rgba(0,0,0,0.1); /* 4px 6px -> 0.25rem 0.375rem */
     }
 
     .nav-list.active {
-        display: flex;
+        display: flex; /* アクティブ時は表示 */
     }
 
     .nav-list li {
-        margin: 10px 0;
+        padding: 0.625rem 1.25rem; /* 10px 20px -> 0.625rem 1.25rem */
+        border-bottom: 0.0625rem solid #f5f5f5; /* 1px -> 0.0625rem */
     }
+}
 
-    .nav-list li a {
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .nav-list li a img {
-        margin-right: 10px;
-    }
-
-    .nav-list li a span {
-        display: inline;
+/* より小さなデバイス向けのスタイル */
+@media (max-width: 26.625rem) { /* 426px */
+    .nav-list {
+        top: 3.75rem; /* 60px -> 3.75rem */
     }
 }
