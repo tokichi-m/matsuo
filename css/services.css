@@ -1,4 +1,16 @@
 /* services.css */
+
+
+.service-section {
+    margin-bottom: 40px;
+}
+
+.service-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0053a0;
+}
+
 .service-item {
     background-color: #fff;
     padding: 20px;
@@ -7,7 +19,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.service-item h2 {
+.service-item h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
