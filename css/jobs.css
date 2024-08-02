@@ -13,8 +13,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 200px;
-    text-align: center;
     transition: transform 0.3s;
+}
+
+.job-item li {
+    list-style: none;
 }
 
 .job-item h2 {
@@ -27,7 +30,13 @@
     margin-bottom: 10px;
 }
 
-.job-item .apply-button {
+.apply-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.apply-button {
     background-color: #ff6600;
     color: #fff;
     padding: 10px 20px;
@@ -38,7 +47,7 @@
     transition: background-color 0.3s;
 }
 
-.job-item .apply-button:hover {
+.apply-button:hover {
     background-color: #e65c00;
 }
 

@@ -1,21 +1,26 @@
 /* access.css */
-.access-info h2 {
+.access-info h2, .map h2 {
     font-size: 1.5em;
-    color: #0053a0;
     margin-bottom: 10px;
 }
 
 .access-info p {
     font-size: 1em;
-    margin-bottom: 20px;
-    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
-.map {
-    margin-top: 20px;
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
 }
 
-.map img {
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+    border: 0;
 }
